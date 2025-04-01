@@ -11,7 +11,7 @@ index=botsv3 earliest=0 sourcetype=linux_audit type=USER_CMD
 | cyberchef infield='cmd' operation="FromHex"
 | table cmd
 ```
-### Using a custom lookup table (.csv) to ignore IP ranges AND regex to search for specific file extensions in order to identify downloads from internal servers
+### Using a custom lookup table (.csv) to ignore specific IP ranges, using regex to search for specific file extensions in order to identify local resources being download from remote machines
 
 ```
 index=botsv3 earliest=0 http_status=200
