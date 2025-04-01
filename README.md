@@ -17,7 +17,7 @@ index=botsv3 earliest=0 sourcetype=linux_audit type=USER_CMD
 index=botsv3 earliest=0 http_status=200
 | lookup internal_ips.csv src_ip OUTPUT src_ip AS internal_ip 
 | where isnull(internal_ip)
-| regex uri_path=".*\.(html|jpg|jpeg|png|css|js|gif|pdf|gz|tar|txt)$"
+| regex uri_path=".*\.(html|jpg|jpeg|png|css|js|gif|pdf|gz|tar|zip|7z|rar|txt)$"
 | table src_ip, uri_path, _time
 ```
 ### Using eval, xyseries, and fillnull to create organized chart which identifies the number of successful Windows logins, counting by logon type
