@@ -33,3 +33,6 @@ Logon_Type==11, "Cached Interactive"
 | xyseries Account_Name Logon_Type_Description count
 | fillnull value=0 "Interactive" "Network" "Batch" "Service" "Unlock" "Network Cleartext" "New Credentials" "RDP" "Cached Interactive"
 ```
+----
+Resources:
+xyseries - splunk docs: https://docs.splunk.com/Documentation/Splunk/9.4.1/SearchReference/Xyseries
