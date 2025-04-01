@@ -20,7 +20,7 @@ index=botsv3 earliest=0 http_status=200
 | regex uri_path=".*\.(html|jpg|jpeg|png|css|js|gif|pdf|gz|tar|txt)$"
 | table src_ip, uri_path, _time
 ```
-### Using eval, xyseries, and fillnull to create organized chart which identifies the number of successful logins, counting by logon type
+### Using eval, xyseries, and fillnull to create organized chart which identifies the number of successful Windows logins, counting by logon type
 
 ```
 index=botsv3 earliest=0 sourcetype=WinEventLog EventCode=4624 (Logon_Type=0 OR Logon_Type=2 OR Logon_Type=3 OR Logon_Type=4 OR Logon_Type=5 OR Logon_Type=7 OR Logon_Type=8 OR Logon_Type=9 OR Logon_Type=10 OR Logon_Type=11)
